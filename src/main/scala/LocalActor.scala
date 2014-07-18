@@ -94,7 +94,7 @@ class Replay(str: ShadowsocksTcp, replay: ActorRef) extends Actor {
   import Tcp._
   import context.system
  
-  IO(Tcp) ! Connect(new InetSocketAddress("localhost", 3001))
+  IO(Tcp) ! Connect(new InetSocketAddress("128.199.192.47", 3001))
 
  
   def receive = {
